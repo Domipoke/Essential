@@ -4,3 +4,4 @@ module.exports = {
 }
 String.prototype = require("./index").string
 Number.prototype = require("./index").number
+console.log()
