@@ -10,5 +10,8 @@
   "license": "ISC",
   "directories": {
     "lib": "lib"
+  },
+  "dependencies": {
+    "node": "^16.5.0"
   }
 }

@@ -1,7 +1,6 @@
-String.prototype = require("./index").string
-Number.prototype = require("./index").number
-Date.prototype = require("./index").date
-
-
-(1).convert("m","mm").log()
-
+var { date,number,string } = require("./index.js")
+String.prototype = string
+Number.prototype = number
+Date.prototype = date
+var n = 1
+n.convert("m","km").log()
