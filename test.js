@@ -1,6 +1,6 @@
-var { date,number,string, object, boolean } = require("./index")
-String.prototype = string
-Number.prototype = number
-Date.prototype = date
-Object.prototype = object
-Boolean.prototype = boolean
+const { edate,enumber,estring, eobject, eboolean } = require("./index")
+String.prototype = estring
+Number.prototype = enumber
+Date.prototype = edate
+Object.prototype = eobject
+Boolean.prototype = eboolean

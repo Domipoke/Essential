@@ -3,11 +3,16 @@
 To import better
 - String
 - Number
+- Date
+- Boolean
 
-Copy this into your project:
-element.prototype = require("essential").element
-Example:
+copy this in your file 
 
-String.prototype = require("essential").String
+const { edate,enumber,estring, eobject, eboolean } = require("@gp4e/essential")
+String.prototype = estring
+Number.prototype = enumber
+Date.prototype = edate
+Object.prototype = eobject
+Boolean.prototype = eboolean
 
-Number.prototype = require("essential").Number
+if one of this variables are just used you can use this:

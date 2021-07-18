@@ -1,5 +1,5 @@
-module.exports.string = require("./lib/String/BetterString").string
-module.exports.date = require("./lib/Date/BetterDate").date
-module.exports.number = require("./lib/Number/BetterNumber").number
-module.exports.object = require("./lib/Json/BetterJson").object
-module.exports.boolean = require("./lib/Boolean/BetterBoolean").boolean
+module.exports.estring = require("./lib/String/BetterString").string
+module.exports.edate = require("./lib/Date/BetterDate").date
+module.exports.enumber = require("./lib/Number/BetterNumber").number
+module.exports.eobject = require("./lib/Json/BetterJson").object
+module.exports.eboolean = require("./lib/Boolean/BetterBoolean").boolean
