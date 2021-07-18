@@ -6,13 +6,10 @@ To import better
 - Date
 - Boolean
 
-copy this in your file 
 
-const { edate,enumber,estring, eobject, eboolean } = require("@gp4e/essential")
-String.prototype = estring
-Number.prototype = enumber
-Date.prototype = edate
-Object.prototype = eobject
-Boolean.prototype = eboolean
-
-if one of this variables are just used you can use this:
+copy this at start of your file:
+<code>String.prototype =  require("@gp4eessential").estring</code><br>
+<code>Number.prototype =  require("@gp4eessential").enumber</code><br>
+<code>Date.prototype =  require("@gp4eessential").edate</code><br>
+<code>Object.prototype =  require("@gp4eessential").eobject</code><br>
+<code>Boolean.prototype =  require("@gp4eessential").eboolean</code><br>
