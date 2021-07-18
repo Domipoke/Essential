@@ -13,3 +13,10 @@ copy this at start of your file:<br>
 <code>Date.prototype =  require("@gp4eessential").edate</code><br>
 <code>Object.prototype =  require("@gp4eessential").eobject</code><br>
 <code>Boolean.prototype =  require("@gp4eessential").eboolean</code><br>
+
+# With Express
+
+You have to go in your index and add this code: <br>
+<code>app.get('/gp4e-essential.js', function(req, res) {res.sendFile(__dirname + '/node_modules/@gp4e/essential/html.js')});<code><br>
+and in your html file:
+<code><script src="/gp4e-essential.js"></script></code>

@@ -19,6 +19,7 @@
     }
     interface String {
         log(opt?: ConsoleLogOption):void;
+        toHTML():HTMLElement;
     }
     interface Number {
         log(opt?: ConsoleLogOption):void;

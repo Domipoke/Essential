@@ -11,9 +11,6 @@
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {
-    "node": "^16.5.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Domipoke/Essential.git"
