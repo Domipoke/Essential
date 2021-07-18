@@ -19,11 +19,13 @@
     }
     interface String {
         log(opt?: ConsoleLogOption):void;
-        toHTML():HTMLElement;
+        append(string:string):string;
+        toNumber(radix?:Number):Number
     }
     interface Number {
         log(opt?: ConsoleLogOption):void;
         sum(nums:Number[]|Number):Number;
+        add(nums:Number[]|Number):Number;
         sub(nums:Number[]|Number):Number;
         multiply(nums:Number[]|Number):Number;
         divide(nums:Number[]|Number):Number;

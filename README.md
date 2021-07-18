@@ -14,9 +14,11 @@ copy this at start of your file:<br>
 <code>Object.prototype =  require("@gp4eessential").eobject</code><br>
 <code>Boolean.prototype =  require("@gp4eessential").eboolean</code><br>
 
-# With Express
+# With Express W.I.P.
 
-You have to go in your index and add this code: <br>
-<code>app.get('/gp4e-essential.js', function(req, res) {res.sendFile(__dirname + '/node_modules/@gp4e/essential/html.js')});<code><br>
-and in your html file:
+<p> You have to go in your index and add this code:</p>
+<code>app.get('/gp4e-essential.js', function(req, res) {res.sendFile(__dirname + '/node_modules/@gp4e/essential/html.js')});</code>
+ <br> 
+  <br> <p>and in your html file:</p> 
 <code><script src="/gp4e-essential.js"></script></code>
+
