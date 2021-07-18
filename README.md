@@ -7,7 +7,7 @@ To import better
 - Boolean
 
 
-copy this at start of your file:
+copy this at start of your file:<br>
 <code>String.prototype =  require("@gp4eessential").estring</code><br>
 <code>Number.prototype =  require("@gp4eessential").enumber</code><br>
 <code>Date.prototype =  require("@gp4eessential").edate</code><br>
