@@ -1,7 +1,7 @@
 {
-  "name": "essential",
+  "name": "@gp4e/essential",
   "version": "1.0.0",
-  "description": "To import better\r - String\r - Number",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,13 @@
   },
   "dependencies": {
     "node": "^16.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Domipoke/Essential.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Domipoke/Essential/issues"
+  },
+  "homepage": "https://github.com/Domipoke/Essential#readme"
 }
