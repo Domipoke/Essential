@@ -1,4 +1,4 @@
-//declare module "essential" {
+declare module "@gp4e/essential" {
     declare type refuse = "no"
     declare type ConsoleLogOption = {
         date:"long"|"short"|refuse,
@@ -17,6 +17,10 @@
         second: Number,
         millisecond: Number
     }
+    declare type ArrayCountJSON = {
+        times: Number, 
+        where: String[]
+    }
     interface String {
         log(opt?: ConsoleLogOption):void;
         append(string:string):string;
@@ -32,6 +36,7 @@
         LongestString(lenght:Number):String;
         convert(from:Measure,to:Measure):Number;
         repeat(what:string|Function,ret:boolean):string|Object|void;
+        msToDateString():String;
     }
     interface Date {
         get(map: String):String;
@@ -42,7 +47,15 @@
         log(what:JSON,opt?: ConsoleLogOption):void;
         isJSON(what:any):boolean;
     }
+    interface Array {
+        cut(start:Number,end:Number):Array
+        count(searchelement,childs:boolean,json:boolean):ArrayCountJSON
+    }
     interface Boolean {
         log():void;
     }
-//}
+    declare function isArray(any:any):boolean; 
+    declare function allArray(any:any):boolean;
+    declare function isInt(any:any):boolean;
+    declare function allInt(any:any):boolean;
+}
