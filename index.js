@@ -11,6 +11,31 @@ module.exports.isArray = require("./lib/CheckTypes/CheckTypes").check.isArray;
 
 
 module.exports.setAll = function () {
-    //    String.prototype = require("./index")
-    console.log("done")
+    const { 
+        edate,
+        enumber,
+        estring, 
+        eobject, 
+        eboolean, 
+        earray,
+        isArray,
+        allArray,
+        isInt,
+        allInt
+    } = require("./index")
+    String.prototype = estring;
+    Number.prototype = enumber;
+    Date.prototype = edate;
+    Object.prototype = eobject;
+    Boolean.prototype = eboolean;
+    Array.prototype = earray;
+}
+module.exports.functions = function () {
+    return {
+        allInt: require("./lib/CheckTypes/CheckTypes").check.allInt,
+        allArray: require("./lib/CheckTypes/CheckTypes").check.allArray,
+        isInt: require("./lib/CheckTypes/CheckTypes").check.isInt,
+        isArray: require("./lib/CheckTypes/CheckTypes").check.isArray,
+        switchArrayJSON: require("./lib/CheckTypes/CheckTypes").check.switchArrayJSON
+    }
 }

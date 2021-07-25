@@ -56,6 +56,7 @@ declare module "@gp4e/essential" {
     }
     declare function isArray(any:any):boolean; 
     declare function allArray(any:any):boolean;
-    declare function isInt(any:any):boolean;
-    declare function allInt(any:any):boolean;
+    declare function isInt(any:any,parse:boolean):boolean;
+    declare function allInt(any:any,parse:boolean):boolean;
+    declare function switchArrayJSON(object: Object):Object;
 }
