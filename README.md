@@ -15,7 +15,7 @@ copy this at start of your file:<br>
 <code>Boolean.prototype =  require("@gp4eessential").eboolean</code><br>
 
 # Fast Import
-<pre>Copy this at start</pre>
+Copy this at start<br>
 <code>require("./index").setAll()</code>
 <code>const {allInt, allArray, isInt, isArray} = require("./index").functions()</code>
 
